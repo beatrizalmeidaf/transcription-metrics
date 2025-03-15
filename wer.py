@@ -85,7 +85,7 @@ with open(args.file_path, 'rb') as f:
 encoding_detected = result['encoding']
 print(f"Encoding detectado: {encoding_detected}")
 
-# Ler o arquivo com a codificação detectada
+# Ler o arquivo 
 df = pd.read_csv(args.file_path, encoding=encoding_detected)
 
 # Calculando o WER para cada linha
