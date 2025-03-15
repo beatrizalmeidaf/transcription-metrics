@@ -72,8 +72,6 @@ print(f"Encoding detectado: {encoding_detected}")
 
 # Ler o arquivo com a codificação detectada
 df = pd.read_csv(args.file_path, encoding=encoding_detected)
-
-# Verificar as primeiras linhas do DataFrame para garantir que as colunas existem
 print(df.head())
 
 # Calculando o CER linha por linha
